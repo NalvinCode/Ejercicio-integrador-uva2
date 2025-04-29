@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí | Mi Cursada 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000080',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Menú de navegación -->
+  <nav class="bg-navy text-white p-4 flex justify-center space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="avisos.html" class="hover:underline">Avisos</a>
+    <a href="sobremi.html" class="hover:underline font-bold">Sobre mí</a>
+    <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+    <a href="contacto.html" class="hover:underline">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="p-6 max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-navy mb-6">Sobre mí</h1>
+
+    <div class="flex flex-col sm:flex-row items-center gap-6">
+      <!-- Imagen de perfil -->
+      <img src="img/perfil.jpg" alt="Foto de perfil" class="w-40 h-40 object-cover rounded-full border-4 border-navy shadow-md">
+
+      <!-- Info personal -->
+      <div>
+        <p class="text-xl font-semibold">Mariano Álvarez</p>
+        <p class="text-gray-700 mb-2">Estudiante de Licenciatura en gestión de tecnología de la información</p>
+        <p class="text-gray-700">Me apasiona la tecnología y su potencial impacto en la sociedad.  
+          Espero crecer como profesional, colaborar en proyectos interesantes y lograr un equilibrio entre creatividad y técnica en mi carrera.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

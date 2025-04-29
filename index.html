@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Mi Cursada 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000080',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Menú de navegación -->
+  <nav class="bg-navy text-white p-4 flex justify-center space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="avisos.html" class="hover:underline">Avisos</a>
+    <a href="sobremi.html" class="hover:underline">Sobre mí</a>
+    <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+    <a href="contacto.html" class="hover:underline">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="p-6 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-navy mb-6">Materias del cuatrimestre</h1>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-300 text-center">
+        <thead class="bg-navy text-white">
+          <tr>
+            <th class="px-4 py-2 border">Materia</th>
+            <th class="px-4 py-2 border">Día y Horario</th>
+            <th class="px-4 py-2 border">Modalidad</th>
+            <th class="px-4 py-2 border">Aula</th>
+          </tr>
+        </thead>
+        <tbody class="bg-gray-50">
+          <tr>
+            <td class="px-4 py-2 border">Estadistica Aplicada</td>
+            <td class="px-4 py-2 border">Lunes 18:30 - 22:00</td>
+            <td class="px-4 py-2 border">Presencial</td>
+            <td class="px-4 py-2 border">Aula 322</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border">Plataformas y negocios web</td>
+            <td class="px-4 py-2 border">Martes 14:00 - 17:00</td>
+            <td class="px-4 py-2 border">Presencial</td>
+            <td class="px-4 py-2 border">Aula 502</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border">Diseño y desarrollo web</td>
+            <td class="px-4 py-2 border">Martes 18:30 - 22:00</td>
+            <td class="px-4 py-2 border">Virtual</td>
+            <td class="px-4 py-2 border">-</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border">Desarrollo de aplicaciones 1</td>
+            <td class="px-4 py-2 border">Martes 18:30 - 22:00</td>
+            <td class="px-4 py-2 border">Remota</td>
+            <td class="px-4 py-2 border">-</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border">Ciencia de datos</td>
+            <td class="px-4 py-2 border">Martes 14:00 - 17:00</td>
+            <td class="px-4 py-2 border">Remota</td>
+            <td class="px-4 py-2 border">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+</html>

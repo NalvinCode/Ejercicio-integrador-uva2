@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avisos | Mi Cursada 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000080',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Menú de navegación -->
+  <nav class="bg-navy text-white p-4 flex justify-center space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="avisos.html" class="hover:underline font-bold">Avisos</a>
+    <a href="sobremi.html" class="hover:underline">Sobre mí</a>
+    <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+    <a href="contacto.html" class="hover:underline">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="p-6 max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-navy mb-6">Avisos y Recordatorios</h1>
+
+    <ul class="space-y-4 list-disc list-inside">
+      <li>
+        <span class="font-semibold text-navy">Diseño y Desarrollo Web</span>
+        <ul class="ml-6 list-disc list-inside text-gray-700">
+          <li>20/5 - Entrega de Trabajo práctico 1</li>
+          <li>10/6 - Subir sitio a GitHub Pages</li>
+        </ul>
+      </li>
+      <li>
+        <span class="font-semibold text-navy">Algoritmos y Programación</span>
+        <ul class="ml-6 list-disc list-inside text-gray-700">
+          <li>30/5 - Examen parcial</li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+
+</body>
+</html>

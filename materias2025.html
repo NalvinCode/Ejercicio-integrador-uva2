@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materias 2025 | Mi Cursada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#000080',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Menú de navegación -->
+  <nav class="bg-navy text-white p-4 flex justify-center space-x-6">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="avisos.html" class="hover:underline">Avisos</a>
+    <a href="sobremi.html" class="hover:underline">Sobre mí</a>
+    <a href="materias2025.html" class="hover:underline font-bold">Materias 2025</a>
+    <a href="contacto.html" class="hover:underline">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="p-6 max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-navy mb-6 justify-center">Materias del Cuatrimestre</h1>
+
+    <ul class="list-disc list-inside space-y-2">
+      <li>Diseño y desarollo web</li>
+      <li>Estadistica aplicada</li>
+      <li>Plataformas y negocios web</li>
+      <li>Ciencia de datos</li>
+      <li>Desarrollo de aplicaciones 1</li>
+    </ul>
+
+    <div class="mt-8">
+      <h2 class="text-xl font-semibold text-navy mb-2">Enlace externo</h2>
+      <p class="text-gray-700">
+        Visitá la página de la materia 
+        <a href="./diseño-y-desarrollo.html" class="text-navy underline font-medium hover:text-blue-600">
+          Diseño y Desarrollo Web
+        </a>.
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>
