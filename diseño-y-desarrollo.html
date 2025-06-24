@@ -4,30 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Materias 2025 | Mi Cursada</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: '#000080',
-          }
-          
-        }
-      }
-    }
-  </script>
+  <link href="./style/output.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Menú de navegación -->
-  <nav class="bg-navy text-white p-4 flex justify-center space-x-6">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="avisos.html" class="hover:underline">Avisos</a>
-    <a href="sobremi.html" class="hover:underline">Sobre mí</a>
-    <a href="materias2025.html" class="hover:underline font-bold">Materias 2025</a>
-    <a href="contacto.html" class="hover:underline">Contacto</a>
-  </nav>
+  <div class="bg-navy text-white p-4 flex flex-col items-center">
+    <button id="menu-toggle" class="md:hidden text-3xl m-0" aria-label="Abrir menú">☰</button>
+    <nav id="mobile-menu" class="hidden w-full m-0 p-3">
+      <ul class="flex flex-col gap-3 items-center text-center">
+        <li class="bg-white text-navy p-3 w-full rounded-2xl font-bold"> <a href="index.html" class="hover:underline text-xl">Home</a>
+        </li>
+        <li class="bg-white text-navy p-3 w-full rounded-2xl font-bold"> <a href="avisos.html" class="hover:underline text-xl">Avisos</a>
+        </li>
+        <li class="bg-white text-navy p-3 w-full rounded-2xl font-bold"> <a href="sobremi.html" class="hover:underline text-xl">Sobre mí</a>
+        </li>
+        <li class="bg-white text-navy p-3 w-full rounded-2xl font-bold"> <a href="materias2025.html" class="hover:underline text-xl">Materias 2025</a>
+        </li>
+        <li class="bg-white text-navy p-3 w-full rounded-2xl font-bold"> <a href="contacto.html" class="hover:underline text-xl">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="hidden md:block w-full">
+      <ul class="flex justify-around">
+        <li class="font-bold text-center text-xl"> <a href="index.html" class="hover:underline">Home</a>
+        </li>
+        <li class="font-bold text-center text-xl"> <a href="avisos.html" class="hover:underline">Avisos</a>
+        </li>
+        <li class="font-bold text-center text-xl"> <a href="sobremi.html" class="hover:underline">Sobre mí</a>
+        </li>
+        <li class="font-bold text-center text-xl"> <a href="materias2025.html" class="hover:underline">Materias 2025</a>
+        </li>
+        <li class="font-bold text-center text-xl"> <a href="contacto.html" class="hover:underline">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- Contenido principal -->
   <main class="p-6 max-w-3xl mx-auto text-center">
@@ -67,5 +79,6 @@
     </p>
   </footer>
 
+  <script src="script/generic.js"></script>
 </body>
 </html>

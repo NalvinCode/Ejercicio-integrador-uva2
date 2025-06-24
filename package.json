@@ -1,0 +1,24 @@
+{
+  "name": "ejercicio-integrador-uva2",
+  "version": "1.0.0",
+  "description": "personal porfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch" : "npx @tailwindcss/cli -i ./style/input.css -o ./style/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NalvinCode/Ejercicio-integrador-uva2.git"
+  },
+  "author": "NalvinCode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NalvinCode/Ejercicio-integrador-uva2/issues"
+  },
+  "homepage": "https://github.com/NalvinCode/Ejercicio-integrador-uva2#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}
